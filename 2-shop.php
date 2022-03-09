@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Shopping Page Demo</title>
+    <title>cart Page</title>
     <link rel="stylesheet" href="2-shop.css"/>
     <script src="4-cart.js"></script>
   </head>
