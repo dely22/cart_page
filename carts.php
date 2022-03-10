@@ -43,7 +43,7 @@ if (isset($_POST["req"])) { switch ($_POST["req"]) {
     if (count($_SESSION["cart"])==0) { respond(1, null); }
 
     // (H2) FILTER ILLEGAL PRODUCTS
-    require "1-products.php";
+    require "products.php";
     $items = [];
     foreach ($_SESSION["cart"] as $pid=>$qty) {
       if (isset($products[$pid])) {

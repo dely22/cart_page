@@ -2,13 +2,15 @@
 <html>
   <head>
     <title>cart Page</title>
-    <link rel="stylesheet" href="2-shop.css"/>
-    <script src="4-cart.js"></script>
+    <link rel="stylesheet" href="shop.css"/>
+    <script src="cart.js"></script>
   </head>
   <body>
+    
+
     <!-- (A) AVAILABLE PRODUCTS -->
     <div id="products"><?php
-      require "1-products.php";
+      require "products.php";
       foreach ($products as $pid=>$p) { ?>
       <div class="pCell">
         <div class="pTxt">
@@ -24,5 +26,6 @@
 
     <!-- (B) CART -->
     <div id="cart"></div>
+    
   </body>
 </html>

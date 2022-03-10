@@ -6,7 +6,7 @@ var cart = {
     for (let [k, v] of Object.entries(data)) { form.append(k, v); }
 
     // (A2) FETCH
-    fetch("3-ajax-cart.php", { method:"POST", body:form })
+    fetch("carts.php", { method:"POST", body:form })
     .then((res) => res.json()).then((res) => {
       if (res.status!=1) { alert(res.msg); }
       else if (after) { after(res.msg); }
@@ -73,7 +73,7 @@ var cart = {
         row = document.createElement("button");
         row.innerHTML = "Checkout";
         row.className = "cOut";
-        row.onclick = () => { location.href = "5-order.php"; };
+        row.onclick = () => { location.href = "order.php"; };
         hcart.appendChild(row);
 
         // EMPTY CART

@@ -9,10 +9,10 @@ if (!isset($_POST["name"]) || !isset($_POST["email"])) {
 }
 
 // (B) SEND EMAIL - CHANGE TO YOUR OWN!
-$to = "admin@site.com";
+$to = "almktaryh@gmail.com@";
 $subject = "Order Received";
 $body = "";
-require "1-products.php";
+require "products.php";
 foreach ($_SESSION["cart"] as $pid=>$qty) {
   $body .= sprintf("%s X %s\r\n", $qty, $products[$pid]["name"]);
 }

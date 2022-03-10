@@ -2,10 +2,10 @@
 <html>
   <head>
     <title>Order Form</title>
-    <link rel="stylesheet" href="5-order.css"/>
+    <link rel="stylesheet" href="order.css"/>
   </head>
   <body>
-    <form method="post" action="6-checkout.php" id="order">
+    <form method="post" action="checkout.php" id="order">
       <label for"name">Name</label>
       <input type="text" name="name" required/>
       <label for"name">Email</label>
